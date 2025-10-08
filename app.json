@@ -1,0 +1,99 @@
+{
+  "expo": {
+    "name": "Algeria Travel",
+    "slug": "TravelApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "algeriatravel",
+    "facebookScheme": "fb2279225665874274",
+    "facebookAppId": "2279225665874274",
+    "facebookDisplayName": "Algeria Travel",
+    "plugins": [
+      [
+        "expo-facebook",
+        {
+          "userTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+        }
+      ],
+      "expo-web-browser",
+      "expo-image-picker"
+    ],
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "host.exp.Exponent",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you.",
+        "NSPhotoLibraryUsageDescription": "This app requires access to your photo library to upload profile images.",
+        "NSCameraUsageDescription": "This app requires camera access to take profile pictures.",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "fb2279225665874274"
+            ]
+          }
+        ],
+        "FacebookAppID": "2279225665874274",
+        "FacebookDisplayName": "Algeria Travel",
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          }
+        ]
+      }
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "host.exp.exponent",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "fb2279225665874274"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3f23b87d-9808-4494-ab47-07cbefd49066"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/3f23b87d-9808-4494-ab47-07cbefd49066"
+    }
+  }
+}
